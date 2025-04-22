@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Расписание для {{ group_name }}</title>
+</head>
+<body>
+    <h1>Расписание для группы {{ group_name }}:</h1>
+    <ul>
+        {% for item in schedule %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="/">Назад</a></p>
+</body>
+</html>

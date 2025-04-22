@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+</head>
+<body>
+    <h1>FAQ:</h1>
+    {% for question, answer in faq_items %}
+    <h3>{{ question }}</h3>
+    <p>{{ answer }}</p>
+    {% endfor %}
+    <p><a href="/">На главную</a></p>
+</body>
+</html>
